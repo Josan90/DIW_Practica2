@@ -1,0 +1,209 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/* Banner */
+.banner{
+    background-image: linear-gradient(to right,white, rgba(232, 232, 255, 0.683),white, rgba(255, 230, 238, 0.574), white );
+    padding:0px 50px;
+}
+.txt-banner{
+    padding: 12px 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.txt-banner a{
+    color: grey;
+    opacity: 80%;
+    text-decoration: none;
+}
+.txt-banner a:hover{
+    color: black;
+}
+
+/*-------------------NavBar----------------*/
+.navegador{
+    background-color: white;
+    padding:0 50px;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+}
+.lupa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscador{
+    width: 280px;
+    height: 30px;
+    border-radius: 9px;
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 70%;
+    background-color: rgb(240, 240, 240);
+}
+.buscador input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.buscador .form-control{
+    background-color: rgb(240, 240, 240);
+}
+.buscador .form-control:focus {
+    box-shadow: none; /*Quitarle el efecto brillo*/
+    background-color: initial; /*Que no cambie de color al hacer click*/
+}
+.collapse .navbar-nav .nav-item{
+    margin: 0 4px;
+    padding: 6px 8px;
+    font-weight: 500;
+}
+#boton-free{
+    font-weight: 500;
+    padding: 5px 17px;
+}
+
+/*-----------------Presnetacion--------------*/
+.presentacion {
+    background-image: linear-gradient(to right,white, rgba(232, 232, 255, 0.683),white, rgba(255, 230, 238, 0.574), white );
+    padding: 80px 10px;
+}
+#img-cabecera{
+    width:337px;
+    height:337px;
+}
+.txt-pr{
+    margin: 19px 0 26px;
+    font-weight: 700;
+    font-size: 50px;
+}
+.txt-sec{
+    font-size: 21px;
+    line-height: 1.4;
+}
+#boton-get{
+    font-weight: 700;
+    margin: 18px 0px;
+    letter-spacing: 0.5px;
+}
+
+/*------------------Tarjetas-----------------*/
+.tarjetas-container{
+    padding: 50px 10px;
+}
+.txt-h3{
+    font-size: 30px;
+}
+
+.tarjetas{
+    border-radius: 10px;
+    
+}
+.txt-h2{
+    font-size: 26px;
+}
+.tarjeta:hover{
+    transform: translateY(-8px);
+}
+
+#boton-resources{
+    background-color: rgb(245, 245, 245);
+    font-size: 20px;
+    border-color: rgb(220, 220, 220);
+}
+#boton-resources:hover{
+    background-color: rgb(215, 225, 236);
+}
+.txt-tarjetas{
+    color:rgb(137, 137, 137);
+    font-size: 15px;
+}
+
+/*------------------Suscripcion-----------------*/
+.suscripcion{
+    background: rgb(64,12,12);
+    background: linear-gradient(90deg, rgba(64,12,12,1) 0%, rgba(0,41,89,1) 100%);
+    padding: 80px 10px;
+    align-items: center;
+}
+
+#btn-subscribe{
+    font-size: 18px;
+    font-weight: 500;
+}
+.txt-by{
+    margin-top:25px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    color:rgb(137, 137, 137);
+}
+.txt-subs{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+.txt-p{
+    font-size: 19px;
+    margin: 0 0 16px;
+    text-align: justify;
+    font-weight: 500;
+    padding: 14px 10px;
+}
+
+/*------------------Footer-----------------*/
+.footer{
+    padding: 13px 0px;
+}
+.cont-footer{
+    padding:40px 50px;
+}
+.footer1{
+    margin-right: 200px;
+}
+.txt-footer{
+    font-size: 14px;
+    color:rgb(137, 137, 137);
+}
+.enlace-footer{
+    text-decoration: none;
+    color:rgb(137, 137, 137);
+}
+.txt-h5{
+    color:rgb(198, 198, 198);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+.footer-a, a{
+    color:rgb(85, 85, 85);
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+
+/*-------------------Media Querys---------------*/
+@media (max-width: 991.98px) { /*Para quitar el buscador primero al tamaño lg/md*/
+    .buscador {
+        display: none;
+    }
+}
+@media (max-width: 1200px) { /*Para el tamaño entre lg y md de las imagenes*/
+    .tarjetas {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+@media (max-width: 767px){
+    #img-cabecera{
+        width: 30%;
+        height: auto;
+    }
+    #boton-resources{
+        display: none;
+    }
+}

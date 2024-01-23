@@ -1,0 +1,256 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/*Titulos negrita con fondito de letras grandes y transparentes*/
+.titulos-h3{
+    font-weight: 900;
+    font-size: 35px;
+    position: relative;
+}
+.titulos-fondo{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: 0.1;
+    line-height: 0;
+    color:white;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
+}
+/****************** Navbar *****¬¬****************/
+.fila-navbar {
+    padding: 20px 0;
+}
+.fila-navbar .container{
+    padding: 0 40px;
+}
+.nav-link{
+    margin: 0 20px;
+    font-size: 13px;
+    padding: 0 0 0 0px;
+    font-weight: 500; /*Eso es lo mas gordo que me deja la tipo sin parecer extra thick*/
+}
+
+/**************** Presnetacion *****¬¬*********/
+.fila1{
+    background-color: #f5f5f5;
+}
+#fondo-bernard{
+    background-image: url(./assets/presentacionsydney.jpg);
+    background-size: cover; /* Ajusta la propiedad background-size según tu preferencia */
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    margin:0;
+    position:static;
+}
+/* Franja blanca en el lado izquierdo*/
+.franja-blanca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background-color: white;
+    z-index: 1; /*Para poner la franja encima del fondo*/
+}
+/* Tocar el z para poner el texto por encima de la franja */
+.fila1 .col-lg-7 {
+    z-index: 2;
+}
+
+
+.fila1 h3{
+    font-size: 120px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+/**************** About *****¬¬*****************/
+.fila2{
+    margin:0 0 163px;
+    padding: 230px 0 0;
+    background-color: white;
+}
+.parrafo-about{
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0 0 33px;
+}
+#boton-learn{
+    padding: 13px 50px;
+    font-size: 15px;
+    border-radius: 0%;
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-color: var(--bs-black);
+}
+
+/**************** Portfolio *****¬¬*************/
+.fila3 {
+    padding:0 0px 100px;
+    background-color: #f8f9fa;
+}
+
+.text-img-color h5{
+    font-size: 18px;
+    font-weight: 600; /*no tiene punto medio el peso*/
+}
+.text-img-color p{
+    font-size: 15px;
+}
+.zoom-efecto{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.zoom-efecto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+.zoom-efecto:hover img{
+    transform: scale(1.1);
+}
+
+.img-hover-zoom {
+    height: 300px;
+    overflow: hidden; /* Ocultar lo sobrante */
+  }
+  
+  /* Transicion de tamaños smooth */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* Aumentar el tamaño en hover */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+
+  /**************Testimonials******************/
+  .fila4 {
+    margin:0 0 153px;
+    padding: 200px 0 0;
+    background-color: white;
+}
+#carouselExample{
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+  /*****************News**********************/
+  .fila5 {
+    margin:0 0 83px;
+    padding: 205px 0 0;
+    background-color: #f8f9fa;
+}
+.fila5 .row{
+    display: flex;
+   flex-wrap: wrap;
+}
+#espaciado-tarjetas{
+    margin-bottom: 73px;
+}
+
+
+.card{
+    border-radius: 0%;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 0%;
+}
+
+.card-title{
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+    color:#a0a0a0;
+}
+
+.card-text{
+    font-size: 18px;
+    font-weight: 600; /*De nuevo no tiene un punto*/
+}
+
+.card-body{
+    padding: 30px 40px 25px;
+}
+
+/****************Contact********************/
+.fila6 {
+    margin:0 0 153px;
+    padding: 200px 0 0;
+    background-color: white;
+}
+
+.texto-form{
+    font-size: 15px;
+    padding: 95px 0 0;
+    color: #767676;
+    font-style: italic;
+}
+.formularios{
+    padding: 10px 0 0 0;
+}
+.formularios input{
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0%;
+}
+.formularios textarea{
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0%;
+}
+#btn-message{
+    font-size: 15px;
+    padding: 13px 50px;
+    border-radius: 0%;
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-color: var(--bs-black);
+}
+
+/*******************Footer*******************************/
+.footer-text{
+    color: white;
+    margin: 0 0 30px;
+    padding: 0 0 0 30px;
+}
+.cont-footer{
+    padding: 90px 0 60px;
+}
+.footer{
+    background-color: black;
+}
+
+
+/****************Medias********************/
+/*Las tarjetas de colores*/
+@media (min-width: 992px) and (max-width: 1040px) {
+    .fila3 .col-md-6 {
+        max-width: 50%;
+    }
+}
+
+/*Las tarjetas del News*/
+@media (min-width: 992px) and (max-width: 1399px) {
+    .caja-carta {
+    margin-left: 70px;
+    margin-right: 60px;
+    max-width: 10%;
+    }
+  }
+
+
+/* Medi@ de la franja blanca */
+@media (max-width: 991px) {
+    .franja-blanca {
+        display: none; /* Ocultar en tamaño md */
+    }
+}

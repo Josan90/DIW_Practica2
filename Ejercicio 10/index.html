@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Memberbase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+  </head>
+
+    <body>
+<!--Encabezado-->
+        <header>
+          <div class="banner">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <div class="txt-banner">
+                    A Webflow membership template for resource websites.
+                    <a href="grupostudium.com" target="_blank">See all templates ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+<!--Navbar-->
+      <div class="navegador">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <!--Logo-->
+                   <a class="navbar-brand" href="#">
+                      <img src="./assets/logo.svg" width="195" height="35" alt="logo memberbase">
+                    </a>
+                    <!--Buscador-->
+                   <div class="buscador">
+                        <img src="./assets/search.svg" alt="buscar" class="lupa">
+                        <input class="form-control mr-sm-2" id="buscador-unico" type="search" placeholder="Search resources" aria-label="Search">
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text-center">
+                      <a class="nav-link" aria-current="page" href="#">All Resources</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link" href="#">Log In</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                  <button class="btn bg-dark text-light my-2 my-sm-0 w-100" type="submit" id="boton-free">Free Sign Up</button>
+                  </form>
+                </div>
+            </nav>
+        </div>
+      </div>
+<!--Presentacion-->
+        <div class="presentacion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 order-lg-1 order-2">
+                        <h1 class="txt-pr">Access a library of <br> free design resources</h1>
+                        <p class="txt-sec">The best resources and books from around the web, <br>collected and curated for your reading.</p>
+                        <button type="button" class="btn btn-dark px-4 py-2" id="boton-get">Get Access Now</button>
+                    </div>
+                    <div class="col-lg-5 order-lg-2 order-1">
+                        <img src="./assets/portada.svg" class="img-fluid" id="img-cabecera" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Tarjetas-->
+        <div class="tarjetas-container">
+          <div class="container">
+            <div class="row">
+              <div class="portada-tarjeta d-flex justify-content-between align-items-center py-4">
+                <h3 class="txt-h3">Featured Resources</h3>
+                <button type="button" class="btn px-4 py-2 text-secondary" id="boton-resources">See All Resources</button>
+              </div>
+              <!--Tarjetas-->
+              <div class="col-lg-4 col-md-6 col-sm-12 tarjeta">
+                <a href="grupostudium.com">
+                  <img src="./assets/carta1.svg" alt="Grids & Alignment" class="col-sm-12 tarjetas">
+                </a>
+                  <div>
+                    <p class="txt-by">By Nikolai Bain</p>
+                    <h2 class="txt-h2">Grids & Alignment</h2>
+                    <p class="txt-tarjetas">Expedita laborum suscipit sequi et nobis voluptas fuga placeat. Omnis est ratione. 
+                      Repellendus recusandae a. Nulla quia cum aliquam dolores beatae tempore harum pariatur. 
+                      Velit amet officiis.</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 tarjeta">
+                <a href="grupostudium.com">
+                  <img src="./assets/carta2.svg" alt="Remote Work for Design Teams" class="col-sm-12 tarjetas">
+                </a>
+                  <div>
+                    <p class="txt-by">By Maxwell Milton</p>
+                    <h2 class="txt-h2">Remote Work for Design Teams</h2>
+                    <p class="txt-tarjetas">Repudiandae asperiores excepturi repellat minus id et.
+                      Saepe molestiae accusantium fugit et aut.
+                      Reicie</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 tarjeta">
+                <a href="grupostudium.com">
+                  <img src="./assets/carta3.svg" alt="Design Systems in Product Teams" class="col-sm-12 tarjetas">
+                </a>
+                  <div>
+                    <p class="txt-by">By Franko Realguy</p>
+                    <h2 class="txt-h2">Design Systems in Product Teams</h2>
+                    <p class="txt-tarjetas">Ut libero molestias excepturi veniam et dicta assumenda tenetur voluptatem.
+                      Qui dolor officiis eum.
+                      Doloribus odit qui quia blanditiis omnis asperiores perspiciatis qui deleniti.</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 tarjeta">
+                <a href="grupostudium.com">
+                  <img src="./assets/carta4.svg" alt="All in One Color Handbook" class="col-sm-12 tarjetas">
+                </a>
+                  <div>
+                    <p class="txt-by">By Nikolai Bain</p>
+                    <h2 class="txt-h2">All in One Color Handbook</h2>
+                    <p class="txt-tarjetas">Vel esse et temporibus inventore alias assumenda.
+                      Repellat sit accusamus id sed est animi vel.
+                      Odit non ut reprehenderit consequatur sit aliquam.
+                      Aut aliquid consequatur</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 tarjeta">
+                <a href="grupostudium.com">
+                  <img src="./assets/carta5.svg" alt="Digital Wellbeing and Support" class="col-sm-12 tarjetas">
+                </a>
+                  <div>
+                    <p class="txt-by">By Tim Tommons</p>
+                    <h2 class="txt-h2">Digital Wellbeing and Support</h2>
+                    <p class="txt-tarjetas">Dignissimos dolores enim ipsum quia occaecati voluptas aut delectus.
+                      Reiciendis recusandae minima quod qui.Eum dicta et nihil ad et nam.Vitae et itaque porro.
+                      Ipsa distinctio laboriosam veritatis.
+                      Minus quia eos ut.</p>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<!--Suscripcion-->
+        <div class="suscripcion">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12 mx-auto">
+                <h2 class="txt-subs text-light text-center">Get more great resources</h2>
+                <p class="txt-p text-light text-center">Get the latest design resources from across the web.<br> Straight to your inbox.</p>
+                <form class="form-inline d-flex flex-row justify-content-center">
+                  <div class="form-group col-lg-3 col-sm-4 mx-sm-2 mx-xs-4 mb-2">
+                    <input type="text" class="form-control" id="buscador-email" placeholder="Enter your email">
+                  </div>
+                  <button type="submit" class="btn btn-secondary mb-2 px-4" id="btn-subscribe">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--Footer-->
+        <div class="footer">
+          <div class="container cont-footer">
+            <div class="row">
+              <div class="col-lg-3 col-md-2 footer1">
+                <a class="navbar-brand" href="#">
+                  <img src="./assets/logo.svg" class="mb-3" width="195" height="35" alt="">
+                </a>
+                <p class="txt-footer">Built by Nikolai Bain.<br>
+                Powered by <a href="grupostudium.com" class="enlace-footer">Webflow.</a></p>
+                <p class="txt-footer">© 2022 Memberbase. All Rights Reserved.</p>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-5 footer-a">
+                <h5 class="txt-h5 text-uppercase mt-md-0 mt-sm-4">website</h5>
+                <div class="d-flex flex-column">
+                <a>Home</a>
+                <a>Resources</a>
+                <a>Contact</a>
+                <a>Ebook (CMS)</a>
+                <a>Terms & Conditions</a>
+                <a>Privacy Policy</a>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-5 footer-a">
+                <h5 class="txt-h5 text-uppercase mt-md-0 mt-sm-4">membership</h5>
+                <div class="d-flex flex-column">
+                <a>Sign In</a>
+                <a>Sign Up</a>
+                <a>User Account</a>
+                <a>Reset Password</a>
+              </div>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-5 footer-a">
+                <h5 class="txt-h5 text-uppercase mt-md-0 mt-sm-4">admin</h5>
+                <div class="d-flex flex-column">
+                <a>Style Guide</a>
+                <a>Licenses</a>
+                <a>Instructions</a>
+                <a>Password</a>
+                <a>404</a>
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       </body>
+</html>
